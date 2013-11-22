@@ -1,9 +1,10 @@
 <?php
+
 return array(
-    'name'        => 'Pick Point',
+    'name' => 'PickPoint',
     'description' => 'Расчет стоимости доставки через http://pickpoint.ru/',
-    'icon'        => 'img/dpickpoint16.png',
-    'logo'        => 'img/dpickpoint.png',
-    'version'     => '1.0.0',
-    'vendor'      => 903438,
+    'icon' => 'img/dpickpoint16.png',
+    'logo' => 'img/dpickpoint.png',
+    'version' => '1.0.1',
+    'vendor' => '985310',
 );
