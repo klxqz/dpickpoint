@@ -1,40 +1,38 @@
 <?php
+
 return array(
-    'login'      => array(
-        'title'        => 'Логин',
-        'value'        => 'apitest',
-        'description'  => 'Введите полученный логин.',
+    'login' => array(
+        'title' => 'Логин',
+        'value' => 'apitest',
+        'description' => 'Введите полученный логин.',
         'control_type' => waHtmlControl::INPUT,
     ),
-    'password'      => array(
-        'title'        => 'Пароль',
-        'value'        => 'apitest',
-        'description'  => 'Введите полученный пароль.',
+    'password' => array(
+        'title' => 'Пароль',
+        'value' => 'apitest',
+        'description' => 'Введите полученный пароль.',
         'control_type' => waHtmlControl::INPUT,
     ),
-    'ikn'      => array(
-        'title'        => 'ИКН',
-        'value'        => '9990003041',
-        'description'  => 'Введите полученный ИКН.',
+    'ikn' => array(
+        'title' => 'ИКН',
+        'value' => '9990003041',
+        'description' => 'Введите полученный ИКН.',
         'control_type' => waHtmlControl::INPUT,
     ),
-    'sandbox'  => array(
-        'value'        => '1',
-        'title'        => 'Тестовый режим',
-        'description'  => '',
+    'sandbox' => array(
+        'value' => '1',
+        'title' => 'Тестовый режим',
+        'description' => '',
         'control_type' => waHtmlControl::CHECKBOX,
     ),
-    
-    'city'      => array(
-        'title'        => 'Город',
+    'city' => array(
+        'title' => 'Город',
         'value' => 'Москва',
-        'description'  => 'Введите название города пункта отправления.',
+        'description' => 'Введите название города пункта отправления.',
         'control_type' => waHtmlControl::SELECT,
     ),
-
-    
     'rates' => array(
-        'value' =>         
+        'value' =>
         array(
             '4.2' => 175,
             '7.2' => 199,
@@ -42,12 +40,10 @@ return array(
             '17.3' => 240,
             '30.2' => 289,
             '50.4' => 399,
-                    
         ),
         'title' => 'Тарифы',
         'control_type' => 'RatesControl',
     ),
-    
     'zones' => array(
         'value' => array(
             '-1' => 0.0,
@@ -60,13 +56,10 @@ return array(
             '6' => 117.0,
             '7' => 147.4,
             '8' => 201.0,
-                    
         ),
         'title' => 'Магистральные перевозки',
         'control_type' => 'ZonesRatesControl',
     ),
-    
-
 );
 
 //EOF
