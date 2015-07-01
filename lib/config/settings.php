@@ -60,6 +60,12 @@ return array(
         'title' => 'Магистральные перевозки',
         'control_type' => 'ZonesRatesControl',
     ),
+    'amount_free_delivery' => array(
+        'value' => 9999999,
+        'title' => 'Сумма заказа для бесплатной доставки',
+        'description' => 'Если сумма заказа превышает указанное число, стоимость доставки будет равна 0',
+        'control_type' => waHtmlControl::INPUT,
+    ),
 );
 
 //EOF

@@ -5,6 +5,6 @@ return array(
     'description' => 'Расчет стоимости доставки через http://pickpoint.ru/',
     'icon' => 'img/dpickpoint16.png',
     'logo' => 'img/dpickpoint.png',
-    'version' => '1.0.3',
+    'version' => '1.1.0',
     'vendor' => '985310',
 );

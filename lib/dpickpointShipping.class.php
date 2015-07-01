@@ -83,6 +83,11 @@ class dpickpointShipping extends waShipping {
                 $weight = $this->getTotalWeight();
                 $price = $this->getDeliveryCost($weight, $zone);
 
+                $total = $this->getTotalPrice();
+                if ($total > $this->amount_free_delivery) {
+                    $price = 0;
+                }
+
                 $this->PickPoint->setMode($this->sandbox);
                 $SessionId = $this->PickPoint->login($this->login, $this->password);
                 $response = $this->PickPoint->getZone($SessionId, $this->city, $pickpoint_id);
