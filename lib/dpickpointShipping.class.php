@@ -124,17 +124,16 @@ class dpickpointShipping extends waShipping {
             } catch (Exception $e) {
                 return $e->getMessage();
             }
+        } else {
+            return array(
+                'delivery' => array(
+                    'est_delivery' => 'от 1 дня',
+                    'currency' => 'RUB',
+                    'rate' => $this->default_price,
+                    'description' => null,
+                ),
+            );
         }
-
-
-        return array(
-            'delivery' => array(
-                'est_delivery' => '1 неделя',
-                'currency' => 'RUB',
-                'rate' => null,
-                'description' => null,
-            ),
-        );
     }
 
     public function allowedCurrency() {

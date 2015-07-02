@@ -66,6 +66,12 @@ return array(
         'description' => 'Если сумма заказа превышает указанное число, стоимость доставки будет равна 0',
         'control_type' => waHtmlControl::INPUT,
     ),
+    'default_price' => array(
+        'value' => 300,
+        'title' => 'Стоимость доставки по умолчанию',
+        'description' => '',
+        'control_type' => waHtmlControl::INPUT,
+    ),
 );
 
 //EOF
