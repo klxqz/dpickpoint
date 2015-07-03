@@ -125,11 +125,16 @@ class dpickpointShipping extends waShipping {
                 return $e->getMessage();
             }
         } else {
+            $price = $this->default_price;
+            $total = $this->getTotalPrice();
+            if ($total > $this->amount_free_delivery) {
+                $price = 0;
+            }
             return array(
                 'delivery' => array(
                     'est_delivery' => 'от 1 дня',
                     'currency' => 'RUB',
-                    'rate' => $this->default_price,
+                    'rate' => $price,
                     'description' => null,
                 ),
             );
