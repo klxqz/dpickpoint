@@ -3,7 +3,7 @@
         display: none !important;
     }
 </style>
-<script type="text/javascript" src="http://pickpoint.ru/select/postamat.js"></script>
+<script type="text/javascript" src="//pickpoint.ru/select/postamat.js"></script>
 
 <div id="address">{$pickpoint_address}</div>
 
@@ -15,14 +15,6 @@
 <script type="text/javascript">
 
     $(document).ready(function () {
-        /*
-         $('input[name="customer_{$plugin_id}[address.shipping][zip]"]').attr("readonly", "readonly");
-         $('input[name="customer_{$plugin_id}[address.shipping][street]"]').attr("readonly", "readonly");
-         $('input[name="customer_{$plugin_id}[address.shipping][city]"]').attr("readonly", "readonly");
-         $('select[name="customer_{$plugin_id}[address.shipping][country]"] option').attr("disabled", "disabled");
-         */
-
-
         $('.PickPointOpen').click(function () {
             PickPoint.open(pickpoint_callback, {
                 fromcity: '{$from_city}'
@@ -60,11 +52,7 @@
             loaded_flag = true;
             responseCallback(shipping_id, response.data);
         }, "json");
-
-
-
     }
-
 
     function responseCallback(shipping_id, data) {
         var name = 'rate_id[' + shipping_id + ']';
